@@ -30,6 +30,7 @@ type Inputs struct {
 	Target           string   `env:"INPUT_TARGET"`
 	AllowPullRequest bool     `env:"INPUT_ALLOW_PULL_REQUEST"`
 	AutoTag          bool     `env:"INPUT_AUTO_TAG"`
+	Network          string   `env:"INPUT_NETWORK"`
 }
 
 type Options struct {

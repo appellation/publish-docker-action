@@ -22,6 +22,10 @@ func build(cmd Commander, inputs Inputs) error {
 		args = append(args, "--target", inputs.Target)
 	}
 
+	if inputs.Network != "" {
+		args = append(args, "--network", inputs.Network)
+	}
+
 	args = append(args, inputs.Path)
 
 	return cmd.Run("docker", args...)

@@ -43,6 +43,9 @@ inputs:
   cache:
     description: 'Images to consider as cache sources'
     required: false
+  network:
+    description: 'Docker network to use when building'
+    required: false
 outputs:
   tag:
     description: 'Tag name produced by activating the auto_tag option'
